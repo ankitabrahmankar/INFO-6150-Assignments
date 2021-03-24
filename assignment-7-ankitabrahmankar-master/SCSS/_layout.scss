@@ -1,0 +1,73 @@
+.container {
+    width : 1500px;
+    min-height : 1500px;
+    margin : auto;
+    border: 1px solid ;
+    margin-top: 25px;
+}
+
+
+.header{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    padding: 10px;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .table{
+    margin-top: 25px;
+    padding: 10px;
+   
+  }
+
+  .row{
+   // padding: 10px;
+    //width: 15%;
+   
+    color: #555;
+    
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    //transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .col{
+   // padding: 10px;
+   // width: 15%;
+   
+    color: #555;
+    
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    //transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #fileupload {
+    padding: 10px;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

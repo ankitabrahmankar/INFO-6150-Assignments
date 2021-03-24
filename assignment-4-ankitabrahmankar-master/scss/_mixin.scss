@@ -1,0 +1,129 @@
+/*mixin that defines font-size based on string value or size & uses mixin loops*/
+@mixin font-size-def($font){
+    @if(type-of($font) == string) {
+        font-size: $font;
+    } @else {
+        font-size: 18px + $font;
+    }
+}
+
+/*mixin that defines margin type and value based on passed parameters & uses mixin loops*/
+@mixin my-margin-function($type, $number){
+    @if($type == 'left'){
+        margin-left: $number;    
+    }
+    @else if($type == 'right'){
+        margin-right: $number;    
+    }
+    @else if($type == 'top'){
+        margin-top: $number;    
+    }
+    @else if($type == 'bottom'){
+        margin-bottom: $number;    
+    }
+}
+
+/*mixin function that sets and calculates margin and padding based on passed parameters & uses mixin loops*/
+@function my-padding-margin-function($first, $second){
+    @if(type-of($first) == string){
+        @return $first;
+    } @else{
+        @return $first + $second;
+    }
+}
+
+$backgroundImage: (
+        '1' : './../images/background_image1.jpg',
+        '2' : './../images/whyChooseImg.png',
+        '3' : './../images/residential.PNG',
+        '4' : './../images/aboutcompany1.jpg',
+        '5' : './../images/questionMark.png',
+        '6' : './../images/avatar.png',
+        '7' : './../images/question.png',
+        '8' : './../images/questionIcon.png',
+        '9' : './../images/blog_1.jpg',
+        '10' : './../images/blog2.jpg',
+        '11' : './../images/blog3.jpg',
+        '12' : './../images/office.PNG',
+        '13' : './../images/final.jpg',
+        '14' : './../images/questionGreen.png',
+        '15' : './../images/commercial.PNG',
+        '16' : './../images/office.PNG',
+        '17' : './../images/seasonal.PNG',);
+/*mixin function that returns images from map based on key passed*/
+@function imgOnBackground($key) {
+      @return map-get($backgroundImage, $key);  
+};
+
+/*mixin that defines grid rows and columns based on passed parameters*/
+@mixin setGridColAndRows($col, $row){
+    grid-column: $col;
+    grid-row: $row
+}
+
+/*mixin that defines grid based on passed parameters*/
+@mixin setupGrid($disp, $col, $row ,$gap) {
+    display: $disp;
+    grid-template-columns: $col;
+    grid-auto-rows: $row; 
+    grid-gap: $gap;
+}
+
+/*mixin that sets color value based on passed parameters*/
+@mixin setColor($color){
+    color: $color;
+}
+
+/*mixin that sets border value based on passed parameters*/
+@mixin borderProp($value) {
+    border : $value;
+}
+
+/*mixin that sets border radius value based on passed parameters*/
+@mixin borderRadiusProp($value) {
+    border-radius : $value;
+}
+
+/*mixin that will be inherited to set background color as white*/
+%backgroundWhite{
+    background-color: #FFFFFF;
+}
+
+/*mixin that will be inherited to set background color as gray*/
+%backgroundGray{
+    background-color: #FAFAFA;
+}
+
+/*mixin that will be inherited to set font as Sans-serif*/
+%font-sans-serif{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*mixin that will be inherited to set anchor properties, also includes another mixin*/
+%anchorStyle{
+    text-decoration: none;
+    @include setColor($header-font);
+}
+
+/*mixin that will be inherited to set Image properties*/
+%cleanImagesProp{
+    width: 115%;
+    height: 170px;  
+    margin: my-padding-margin-function(10px, -5px); 
+    @include my-margin-function('top', 20px);
+}
+
+/*mixin sets font-size based on parameters*/
+@mixin font-size($fontValue){
+    font-size: $fontValue;
+}
+
+/*mixin aligns texts*/
+@mixin headerAlign($headerValue){
+    text-align: $headerValue;
+    justify-content: $headerValue;
+}
+
+@mixin fontWeight ($font){
+    font-weight: $font;
+}

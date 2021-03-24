@@ -1,0 +1,146 @@
+.header{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+//Styling for container which holds all li elements
+.container {
+    width : 1500px;
+    min-height : 1500px;
+    margin : auto;
+    border: 1px solid ;
+    margin-top: 25px;
+}
+
+//tag main ul styling
+.mainUl{
+    margin-top: 100px;
+    text-emphasis: bolder;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+//tag li styling
+.li{
+    text-shadow: 10px;
+    font-size: 1rem;
+}
+
+//Styling when fucntion collapsible is called in order to show and hide the elements
+.collapsible {
+    // background-color: #777;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    // padding: 18px;
+    // width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  //collapsible styling
+  .active, .collapsible:hover {
+    background-color: #ccc;
+    padding: 0 18px;
+  }
+
+  .collapsible1 {
+    // background-color: #777;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    // padding: 18px;
+    // width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  //collapsible styling
+  .active, .collapsible1:hover {
+    background-color: #ccc;
+    padding: 0 18px;
+  }
+  
+  //tag  panel styling used in collapsible
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  //tag  panel styling used in collapsible for new todo
+  .panelSub {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  //All button styling
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  //todo styling
+  .addTodo {
+    display: none;
+    background-color: white;
+    height: 440px; 
+    width: 300px; 
+    float: right;
+    margin-top: 100px;
+    margin-right: 200px;
+  }
+
+  //input form styling used to create new todo
+  .input{
+    font-style: italic;
+    padding: 10px;
+    // margin: -10px;
+    margin-left: 27px;
+    height: 35px;
+    background-color: lightgray;
+    border:none; 
+    width: 223px;
+    // margin-top: 30px;
+    color: #939393;
+    font-size: small
+}
+//styling for the button mark todo done
+.doneBtn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 200px;
+
+}
+
+//styling to submit the form which created todo
+.submitBtn{
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 100px;
+}

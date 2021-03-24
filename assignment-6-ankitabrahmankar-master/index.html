@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo lists</title>
+        <link href="dist/main.css" , rel="stylesheet" />
+    </head>
+    <body>
+        <div id="todo-container" class="container">
+            <h2 class="header">My TO-DO List</h2>
+            <!--Button to show the data from json file-->
+             <button id="todo-show" class="addBtn">show</button>
+             <!-- Button to show the form to create new todo list -->
+             <span onclick="showForm()" class="addBtn">Add</span>
+             <!-- main ul which holds the list of todos -->
+             <ul id="mainUl" class= "mainUl">
+                     
+            </ul>
+            <!-- Form to create new todo -->
+             <form action="#" id="addTodoForm" class="addTodo">
+            
+                <input type="text" id="titleInput" class="input" placeholder="Title...">
+                <input type="text" id="descriptionInput"  class="input" placeholder="description...">
+                <input type="date" id="dueDateInput"  class="input" placeholder="Due date...">
+                <input type="time" id="timeInput"  class="input" placeholder="time...">
+                <!-- Button to add newly created todo to list -->
+                <span onclick="newElement()" class= "submitBtn">Submit</span>   
+             </form>
+            
+        </div>
+        <script src="js/todo.js"></script>
+    </body>
+</html>

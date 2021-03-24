@@ -1,0 +1,1132 @@
+/*CSS for header panel*/
+.header{
+    border: #939393;
+    border-style: solid;
+    border-radius: .5px;
+}
+
+/*CSS for Page 1 header display*/
+.grid1{
+    color: #939393;
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    grid-gap: 2px;
+}
+.grid1-cell-one{
+    text-align: left;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 17px;
+    font-size: 1.25em;
+    grid-column: 1;
+    grid-row: 1;
+}
+.grid1-cell-two{
+    text-align: right;
+    margin-left: 300px;
+    margin-right: 10px;
+    margin-top: 17px;
+    font-size: 1.25em;
+    grid-column: 2;
+    grid-row: 1;
+}
+.grid1-cell-two a{
+    color: #38ADA9;
+    text-decoration: none; 
+}
+
+/* CSS for Page 1 nav display*/
+
+.wholeNav{
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.setLogo {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding-left: 10px;
+    color: rgb(68, 187, 202);
+    font-family: verdana; 
+}
+
+.setNav{
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    text-align: left;
+    justify-content: left;
+}
+
+.nav_bar{
+    margin-left: 500px;
+    margin-top: -35px;
+}
+
+.nav_bar a{
+    color: #38ADA9;
+    text-decoration: none; 
+}
+/*CSS tag selector for ul*/
+.nav_ul{
+    
+        list-style-type:none;
+        padding: 10px;
+        margin: 5px;
+        overflow: hidden;  
+}
+
+.list_item{
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: small;
+    float: left;
+}
+
+.quoteButton{
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: small;
+    float: left;
+    margin-top: -7px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #38ADA9;
+    color: ivory;
+    width: 125px;
+    height: 9px;
+} 
+.quoteButton a{
+    color: white;
+}
+.headerImage:hover { 
+    box-shadow: inset 1263px 0px rgba(117, 163, 167, 0.5);
+}
+
+.headerImage{
+    background-image: url("../images/background_image1.jpg"); 
+    height: 469px;
+    opacity: 0.5;
+}
+
+.textAlignOnImageHeader{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 461px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6em;
+    color: black;
+    font-weight: bolder;
+}
+
+.textAlignOnImageDetail{
+    position: relative;
+    top: 23%;
+    left: 10%;
+    line-height: 1.5;
+    font-size: 1em;
+    width: 461px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+}
+.textAlignOnImageButton{
+    position: relative;
+    background: black;
+    border-radius: 25px;
+    color:bla; 
+    padding: 10px;
+    margin: 5px;
+    
+    width: 170px;
+    height: 15px;
+    top: 30%;
+    left: 10%;
+    margin-top: -15px;
+}
+
+.textAlignOnImageButton a{
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+} 
+
+/* CSS for Page 2 display*/
+.grid2{
+    color: #939393;
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    grid-gap: 5px;
+}
+    .grid2-cell-one-row-1{
+        grid-column: 1 / 6;
+        griD-row : 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #38ADA9;
+        font-size: 2em;
+        font-weight: bolder;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    .grid2-cell-one{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid2-cell-two{
+        background-image: url("../images/whyChooseImg.png"); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        grid-column: 2;
+        grid-row: 2;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    .grid2-cell-three{
+        background-image: url("../images/whyChooseImg.png"); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        grid-column: 3;
+        grid-row: 2;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    .grid2-cell-four{
+        background-image: url("../images/whyChooseImg.png"); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        grid-column: 4;
+        grid-row: 2;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid2-cell-five{
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .grid2-cell-header{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #38ADA9;
+        margin-top: 145px;
+    }
+    .grid2-cell-detail{
+        margin-left:-30px;
+        font-size: 1.2em;
+        width: 160%;
+        line-height: 15px;
+        color: #939393;
+    }
+/*CSS for Page 3 image display*/
+
+.grid3{
+    color: #939393;
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    grid-gap: 5px;
+    background-color: #FAFAFA;
+}
+
+.grid3-cell-one-row-1{
+        grid-column: 1 / 7;
+        griD-row : 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #38ADA9;
+        font-size: 2em;
+        font-weight: bolder;
+        margin-top: 60px;
+        margin: auto;
+        padding: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid3-cell-one{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .grid3-cell-two{
+        grid-column: 2;
+        grid-row: 2;
+        margin: auto;
+        padding: auto;
+        text-align: left;
+        justify-content: left;
+    }
+    .grid-3-cleaningImage{ 
+        background-image: url("../images/residential.PNG"); 
+        object-fit: cover;
+        background-size: 240px 190px;
+        width: 115%;
+        height: 170px;
+        padding: 10px;
+        margin: -5px;
+        margin-top: 20px;
+
+    }
+    .grid3-cell-three{
+        grid-column: 3;
+        grid-row: 2;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid-3-cleaningImage1{
+        background-image: url("../images/commercial.PNG"); 
+        object-fit: cover;
+        background-size: 240px 190px;
+        width: 115%;
+        height: 170px;
+        padding: 10px;
+        margin: -5px;
+        margin-top: 20px;
+    }
+    .grid3-cell-four{
+        grid-column: 4;
+        grid-row: 2;
+        margin: 0px;
+        padding: auto;
+        text-align: center;
+        justify-content: center;
+     }
+    .grid-3-cleaningImage2{
+        background-image: url("../images/office.PNG"); 
+        object-fit: cover;
+        background-size: 240px 190px;
+        width: 115%;
+        height: 170px;
+        padding: 10px;
+        margin: -5px;
+        margin-top: 20px;
+    }
+    .grid3-cell-five{
+        grid-column: 5;
+        grid-row: 2;
+        margin: 0px;
+        padding: auto;
+        text-align: center;
+        justify-content: center;
+    }   
+    .grid-3-cleaningImage3{
+            background-image: url("../images/seasonal.PNG"); 
+            object-fit: cover;
+            background-size: 240px 190px;
+            width: 94%;
+            height: 170px;
+            padding: 10px;
+            margin: -5px;
+            margin-top: 20px;
+    }x
+   .grid3-cell-six{
+        grid-column: 6;
+        grid-row: 2;
+    }
+    .grid3-cell-one-row-3{
+        grid-column: 1 / 7;
+        griD-row : 3;
+        text-align: center;
+        justify-content: center;
+        border-radius: 25px;    
+        background: #38ADA9;
+        padding: 10px;
+        margin-left: 600px;
+        width: 200px;
+        height: 10px;  
+        margin-top: 50px;
+		color: white;
+    }
+    .grid3-cell-one-row-3-anchor{
+            text-decoration: none;
+            color: white;
+        }
+    .grid-3-header{
+        font-size: large;
+        color: #38ADA9;
+        margin-left: 5px;
+        margin-top: 30px;
+        text-align: justify;
+    } 
+    .grid3-cell-detail{
+        width: 142px;
+        margin-top: 20px;
+        margin-left: 5px;
+        font-size: small;
+        color: #939393;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    /*CSS for Page 4 image display*/
+    .grid4{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto); 
+        grid-gap: 5px;
+        margin-bottom: 50px;
+        margin-top: 90px;
+    }
+        .grid4-cell-one{
+            background-image: url("../images/aboutcompany1.jpg"); 
+            background-position: center right;
+            background-size: 450px 550px;
+            margin-left: 250px;
+            grid-column: 1;
+            grid-row: 1;
+            height:550px;
+            width: 350px;
+            text-align: center;
+            justify-content: center;
+        }
+        .grid4-cell-two{
+            grid-column: 2;
+            grid-row: 1;
+            text-align: left;
+            justify-content: left;
+        }
+        .grid4-italics{
+            color:#939393;
+           
+        }
+        .grid4-header{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #38ADA9;
+            font-size: 2em;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+        .grid4-details{
+            margin-top: 10px;
+            font-size: small;
+            line-height: 1.5;
+            color:#939393;
+        }
+
+        .grid4-image{
+            background-image: url("../images/questionMark.png"); 
+            height:80px;
+            width: 70px;
+            float: left;
+            margin-right: 30px;
+
+        }
+        .grid4-image-header{
+            color: #38ADA9;
+            font-size: 1em;
+           
+        }
+        .grid4-image-details{
+            margin-top: 10px;
+            font-size: small;
+            line-height: 1.5;
+            color: #939393;
+           
+        }
+        .grid4-alignContent{
+            margin-top: 50px;
+        }
+        .grid4-moreServices{
+            border-radius: 25px;
+            background-color: #38ADA9;
+            padding:10px;
+            margin: 10px;
+            width: 95px;
+            height: 10px;
+            margin-top: 50px;
+            color: white;  
+            text-align: center;
+        }
+         /*CSS for Page 4*/
+    .grid5{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto); 
+        grid-gap: 5px;
+        margin-bottom: 160px;
+    }
+    .grid5-cell-one-row-1{
+        grid-column: 1 / 6;
+        griD-row : 1;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        background-color: #38ADA9;
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    .grid5-header{
+            margin-top: 77px;
+            font-size: xx-large;
+            color: white;
+        }
+    .grid5-header-anchorProperty{
+        text-decoration: none;
+        color: #38ADA9;
+        
+        }
+
+    .grid5-button{
+        border-radius: 25px;
+        background:white;
+        padding: 10px;
+        margin: 5px; 
+        height: 10px;  
+        margin-top: 50px;
+        color: #38ADA9;
+        text-align: center;
+        margin-left: 35px;
+        font-size: small;
+        }
+        .grid5-cell-one-row-2{
+            grid-column: 1 / 6;
+            griD-row : 2;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-weight: bolder;
+            padding: auto;
+            margin: 0px; 
+            text-align: center;
+            justify-content: center;
+            color: #38ADA9;
+            font-size: 1.8em;
+            margin-top: 70px;
+            margin-bottom: 55px;     
+        }
+        .grid5-cell-one{
+            grid-column: 1;
+            griD-row :3;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .grid5-cell-two{
+            margin-top: 70px;
+            background-image: url("../images/avatar.png");
+            background-position: center;
+            background-size: 200px 180px;
+            background-repeat: no-repeat;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            grid-row: 2;
+            grid-column: 3;
+            margin-right: 30px;
+            text-align: center;
+            justify-content: center;
+            
+           
+        }
+        .grid5-cell-three{
+            margin-top: 65px;
+            background-image: url("../images/avatar.png"); 
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: 200px 180px;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            grid-row: 3;
+            grid-column: 3;
+            margin-right: 30px;
+            text-align: center;
+            justify-content: center;
+
+        }
+        .grid5-cell-four{
+            margin-top: 65px;
+            background-image: url("../images/avatar.png"); 
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: 200px 180px;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            grid-row: 4;
+            grid-column: 3;
+            margin-right: 30px;
+            text-align: center;
+            justify-content: center;
+
+        }
+        .grid5-cell-five{
+            grid-row: 5;
+            grid-column: 3;
+            padding: auto;
+            margin: 0px;
+            text-align: center;
+            justify-content: center;
+        }
+        .grid5-name{
+            color: #38ADA9;
+            font-size: large;
+            margin-top: 270px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .grid5-role{
+            color: #939393;
+            line-height: 35px;
+            font-size: medium;
+            
+        }
+
+        /*Adding CSS for page 6 display*/
+.grid6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    grid-gap: 5px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 80px;
+}
+    .grid6-cell-one-row-1{
+        grid-column: 1 / 7;
+        griD-row : 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: auto;
+        margin: 0px;
+        color: #38ADA9;
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 55px;
+      
+    }
+    .grid6-cell-one{
+        grid-column: 1;
+        griD-row : 2;
+        
+    }
+    .grid6-cell-two{
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+        grid-column: 2;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid6-cell-three{
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+        grid-column: 3;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+      
+    }
+    .grid6-cell-four{
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+        grid-column: 4;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+        border-bottom: none;
+       
+    }
+    .grid6-cell-five{
+        padding: 10px;
+        margin: 0px;
+        background-color: white;
+        grid-column: 5;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+   
+    }
+    .grid6-cell-two:hover{
+        background-color: lightblue;  
+    } 
+    .grid6-cell-three:hover{
+        background-color: lightblue;  
+    } 
+    .grid6-cell-four:hover{
+        background-color: lightblue;  
+    } 
+    .grid6-cell-five:hover{
+        background-color: lightblue;  
+    } 
+    .grid6-cell-six{
+        grid-column: 6;
+        griD-row : 2;
+        padding: auto;
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid6-row1{
+        background-image: url("../images/questionIcon.png"); 
+        height: 40px;
+        width: 40px;
+        padding: auto;
+        margin: 0px;
+        
+    }
+    .grid6-row2{
+        font-size: 1.3em;
+        font-weight: bold;
+        color:#38ADA9;
+        padding: 10px;
+        margin: 0px;
+    }
+    hr{
+        width: 60px;
+        border: .5px;
+        color: lightgrey;
+        
+    }
+    .grid6-row3{
+        color: #939393;
+        font-weight: 200;
+        font-size: xx-large;
+    }
+    .grid6-row4{
+        color: #939393;
+        font-size: small;
+    }
+    .grid6-row4-ul{
+        color: #939393;
+        font-size: medium;
+        line-height: 25px;
+    }
+    .grid6-row5{
+        background-color: #38ADA9;
+        color: white;
+        height: 35px;
+        width: 200px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .grid6-row5-anchorProperty{
+        text-decoration: none;
+        color: white;
+    }
+
+    .grid7{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto); 
+        grid-gap: 5px;
+    }
+    .grid7-cell-one-row-1{
+        grid-column: 1 / 6;
+        griD-row : 1;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #38ADA9;
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 10px;
+        margin: 50px; 
+        text-align: center;
+        justify-content: center
+    }
+    .grid7-cell-one{
+        grid-column: 1;
+        griD-row : 2;
+        padding: auto;
+        margin: 0px;
+        text-align: center;
+        justify-content: center
+    }
+    .grid7-cell-two{
+        background-image: url("../images/blog_1.jpg"); 
+        width: 250px;
+        height: 200px;
+        margin-right: 15px;
+        border-radius: 3%;
+        grid-column: 2;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center
+    }
+    .grid7-cell-three{
+        background-image: url("../images/blog2.jpg"); 
+        width: 250px;
+        height: 200px;
+        margin-right: 15px;
+        border-radius: 3%;
+        grid-column: 3;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid7-cell-four{
+        background-image: url("../images/blog3.jpg"); 
+        width: 250px;
+        height: 200px;
+        margin-right: 15px;
+        border-radius: 3%;
+        grid-column: 4;
+        griD-row : 2;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .grid7-cell-one-row-3{
+        grid-column: 1 / 5;
+        griD-row : 3;
+        padding: auto;
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .grid7-date{
+        margin-top: 85%;
+        text-align: left;
+        font-size: medium;
+        color: #939393;
+    }
+    .grid7-header{
+        color: #939393;
+        padding-top: 10px;
+        margin: -5px;
+        line-height: 1.5;
+        text-align: left;
+        font-size: large;
+    }
+    .grid7-details{
+        color: #939393;
+        line-height: 1.5;
+        font-size: small;
+        text-align: justify;
+        justify-content: justify;
+       
+    }
+    .grid7-name{
+        height: 5px;
+        width: 5px;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 5px;
+        margin-top: 15px;
+        color: #939393;
+    }
+    .grid7-by{
+        font-size: small;
+        width: 80px;
+        padding-left: 35px;
+        color: #939393;
+    }
+
+    /*Adding CSS for testimonials */
+    .divisionTestimonials{
+        margin-top: 270px;
+        color: #38ADA9;
+        font-size: 2em;
+        font-weight: bolder;
+        background-color: lightgray;
+        padding-bottom: 10px;
+        margin: 22px;
+    }
+        .divHeading{
+            margin-top: 310px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+        .divImage{
+            background-image: url("../images/avatar.png"); 
+            background-position: center ;
+            background-repeat: no-repeat;
+            padding: 10px;
+            margin: 45px;
+            height: 300px;
+            
+        }
+        .divDetails{
+            color: #939393;
+            text-align: center;
+            font-size: medium;
+            line-height: 1.5;
+        }
+        .divButton{
+            margin-top: 10px;
+            margin-left: 40%;
+            padding: 10px;
+            color: white;
+            background-color:#38ADA9;
+            height: 30px;
+            width: 250px;
+            font-size: medium;
+            text-align: center;
+        }
+/* adding CSS for page 9*/
+.grid8{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto); 
+    grid-gap: 5px;
+}
+    .grid8-cell-one-row-1{
+        margin-left: 40%;
+        grid-column: 1 / 6;
+        grid-row : 1;
+        position: static;
+        width: 200px;
+        height: 16px;
+        padding: 10px;
+       
+        color: #38ADA9;
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-align: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;	
+    }
+    .grid8-cell-one{
+        background-image: url("../images/blog_1.jpg"); 
+        background-position: center right;
+        background-size: 300px 300px;
+        padding: 10px;
+        margin: -5px;
+        width: 100%;
+        height: 200px;
+        grid-column: 1;
+        grid-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+   /* .grid8-scroll1{
+        margin-left: 10px;
+        opacity: .5;
+        color: white;
+        border-radius: 25px;
+        margin-top: 90px;
+        padding: 10px;
+        height: 18px;
+        width: 18px;
+        background-color: #38ADA9;
+        }
+   */
+    .grid8-cell-two{
+        background-image: url("../images/blog2.jpg"); ;
+        background-position: center right;
+        background-size: 300px 300px;
+        padding: 10px;
+        margin: -5px;
+        width: 100%;
+        height: 200px;
+        grid-column:2;
+        grid-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+        .grid8-text {
+            color: transparent;
+            margin-left: 100px;
+            margin-top: 90px;
+        }
+    .grid8-cell-one:hover{
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);  
+    } 
+    .grid8-cell-two:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);  
+    } 
+    .grid8-cell-three:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);  
+    } 
+    .grid8-cell-four:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);  
+    } 
+    .grid8-text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+    }
+    .grid8-cell-three{
+        background-image: url("../images/blog3.jpg"); 
+        background-position: center right;
+        padding: 10px;
+        margin: -5px;
+        width: 100%;
+        height: 200px;
+        grid-column: 3;
+        grid-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+    .grid8-cell-four{
+        background-image: url("../images/office.PNG"); 
+        background-position: center right;
+        padding: 10px;
+        margin: -5px;
+        width: 100%;
+        height: 200px;
+        grid-column: 4;
+        grid-row : 2;
+        text-align: center;
+        justify-content: center;
+    }
+   /* .grid8-scroll2{
+        margin-left: 277px;
+        opacity: .5;
+        color: white;
+        height: 18px;
+        width: 18px;
+        border-radius: 25px;
+        padding: 10px;
+        margin-top: 90px;
+        background-color: #38ADA9;
+    }*/
+    .grid8-image{
+        background-image: url("../images/final.jpg"); 
+        width: 100%;
+        height: 600px;
+        grid-column: 1 / 6;
+        griD-row : 3;
+        margin-top: -5px;
+    }
+    .grid8-form{
+        background-color: white;
+        height: 440px; 
+        width: 300px; 
+        float: right;
+        margin-top: 100px;
+        margin-right: 200px;
+    }
+    .grid8-heading{
+        color: #38ADA9;
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    .grid8-inputText{
+        font-style: italic;
+        padding: 10px;
+        margin: -10px;
+        margin-left: 27px;
+        height: 35px;
+        background-color: lightgray;
+        border:none; 
+        width: 223px;
+        margin-top: 30px;
+        color: #939393;
+        font-size: small
+    }
+    .grid8-inputTextArea{
+        margin-left: 27px;
+        height: 80px;
+        background-color: lightgray;
+        border:none;
+        width: 223px;
+        margin-top: 20px;
+        color: #939393;
+        font-size: small;
+        padding: 10px;
+    
+        font-style: italic;
+    }
+    .grid8-button{
+        height: 40px;
+        width: 246px;
+        margin-top: 30px;
+        margin-left: 27px;
+        background-color: #38ADA9;
+        color: white;
+        border: none;
+    }
+
+    /*Adding CSS for page- 9*/
+    .grid9{
+        margin-top: 50px;
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(50px, auto); 
+        grid-gap: 5px;
+    }
+    .grid9-cell-one{
+        grid-column:2;
+        grid-row : 1;
+        width: 222px;
+    }
+    .grid9-header1{
+        font-size: large;
+        color: #38ADA9;
+        font-weight: bold;
+    }
+    .grid9-details{
+        line-height: 1.6;
+        margin-top: 20px;
+        font-size: small;
+        color: #939393;
+    }
+    .grid9-bold{
+        font-weight: bold;
+    }
+
+    .grid9-cell-two{
+        grid-column:3;
+        grid-row : 1;
+       
+    }
+    .grid9-cell-three{
+        grid-column:4;
+        grid-row : 1;
+    }
+    .grid9-cell-four{
+        grid-column:5;
+        grid-row : 1;
+    }
+    .grid9-header1{
+        font-size: small;
+        font-weight: bold;
+        color: #939393;
+        margin-top: 5px;
+    }
+    .grid9-ul {
+        font-size: small;
+        list-style-type: none;
+        padding: 10px;
+        margin: -10px;
+        overflow: hidden;
+        line-height: 1.9;
+        color:#939393;
+        
+    }
+    .grid9-details1{
+        margin-top: 20px;
+        font-size: x-small;
+        color: #939393;
+        line-height: 1.9;
+    }
+   
+    a{
+        text-decoration: none;
+        color: #939393;
+    }

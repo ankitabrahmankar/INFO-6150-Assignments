@@ -1,0 +1,1 @@
+This assignment contains an HTML page with CSS. The goal of this assignment is to learn about CSS Selectors, properties, combinators, pseudo-classes, pseudo-elements and using GIT as a source control repository to maintain different versions of the file.

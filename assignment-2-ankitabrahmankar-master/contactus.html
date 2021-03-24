@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- This file contains all the information about contact information of Adventures company-->
+<!--HTML start-->
+<html>
+  <head>
+    <!--Head section of HTML-->
+    <!--This meta tag controls page's dimensions and scaling-->
+    <!--width=device-width part sets the width of the page to follow the screen-width of the device-->
+    <!--initial-scale=1.0 part sets initial zoom level when the page is first loaded by the browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This meta tag gives description of web page-->
+    <meta name="description" content="Using HTML elements and attributes">
+    <!--This meta tag displays author of the page-->
+    <meta name="author" content="Ankita Brahmankar">
+     <!--This meta tag is used to display an HTcoML page rrectly, by letting browser know the character set used in the page-->
+     <meta charset="UTF-8">
+    <!--Title displayed on the tab-->
+    <title>Contact form</title>
+     <!-- Add icon library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!--Some styling used to display the page in decorative way-->
+    <!--Style tag start-->
+      <style>
+        html, body {
+        min-height: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        }
+        h1 {
+        margin: 0 0 20px;
+        font-weight: 400;
+        }
+      
+        .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+        }
+        form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5; 
+        }
+      
+        input, textarea {
+        width: calc(100% - 18px);
+        padding: 8px;
+        margin-bottom: 20px;
+      
+        }
+        button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        color:black;
+        }
+      </style>
+      <!--style tag END-->
+  </head>
+  <!--Head tag END-->
+
+  <!--Body tag start-->
+  <body>
+    <div class="main-block">
+      <!--Used form tag to create form to get user information in ordet to contact user-->
+      <form action="Homepage.html">
+        <h1>Contact Us</h1>
+        <div class="info">
+           <!--Input text validation required-->
+          <input class="fname" type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="name" placeholder="Email" required>
+          <input type="tel" name="PhoneNumber" placeholder="Phone number">
+        </div>
+        <p>Message</p>
+        <div>
+          <textarea rows="4" required></textarea>
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+
+    <!--used div tag to enclose all the tags giving contact information in block-->
+    <div class="column">
+      <div class="card">
+          <h2>Also you can contact us on below:</h2>
+          <p>Contact: 617-908-6767</p>
+          <p>Email: adventureHelp@gmail.com</p> 
+      </div>
+    </div>
+
+  <!--Footer start-->
+  <footer>
+    <div>
+        <hr>
+        <h3>Adventure</h3>
+            <p>Gateway for your routine! Lorem ipsum dolor sit amet.</p>
+            <p>Copyright &copy;2020, My Website</p>
+        <a href="Homepage.html">Back</a>
+    </div>
+  </footer>
+  <!--Footer end-->
+  </body>
+  <!--Body End-->
+</html>
+<!--HTML end-->

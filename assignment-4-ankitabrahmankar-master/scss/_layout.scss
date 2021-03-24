@@ -1,0 +1,980 @@
+/*Used mixin Maps to fetch images*/
+/*Used extend keyword for SCSS inheritance*/
+/*Used include keyword for SCSS mixin, functions, loops and math operations*/
+/*Used $ symbol to include SCSS variables for font-color*/
+/*Used grid layout for all the grids in the document*/
+
+/*SCSS for main div*/
+.viewport{
+    margin: my-padding-margin-function(-8px, 0px);
+}
+
+/*SCSS for header panel*/
+.header{
+    @include borderProp (solid .5px $header-font);
+}
+
+/*Nested SCSS for Page 1 header display*/
+.grid1{
+    @include setColor($header-font);
+    @include setupGrid(grid, repeat(2, 1fr), minmax(50px, auto), 0px);
+    @include font-size (small);
+    .grid1-cell-one{
+        @include setGridColAndRows(1, 1);
+        @include my-margin-function('left', 17px);
+        @include my-margin-function('top', 17px);
+        @include headerAlign (center);
+    }
+    .grid1-cell-two{
+        @include setGridColAndRows(2, 1);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        .anchorProperty{
+            @include setColor($brand);
+            text-decoration: none; 
+        }
+    }
+}
+
+/*Nested SCSS for Page 1 nav display*/
+/*Used CSS Positioning*/
+.wholeNav{
+    @include my-margin-function('bottom', 15px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    @extend %backgroundWhite;
+    .setLogo{
+        width: 32%;
+        height: 50px;
+        float: left;
+        font-weight: bold;
+        font-family: verdana;
+        @include setColor($brand);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (right);
+        @include font-size-def(xx-large);
+    }
+    .setNav{
+        width: 90%;
+        height: 50px;
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        nav{
+            @include my-margin-function('left', 500px);
+            .anchorProperty{
+                @include setColor($brand);
+                text-decoration: none; 
+            }
+        }
+    }
+}
+
+/*SCSS tag selector for ul*/
+ul {
+    list-style-type: none;
+    padding: my-padding-margin-function(10px, 5px);
+    overflow: hidden;
+}
+
+/*Nested SCSS for Page 1 nav display*/
+nav {
+    ul {
+        li{
+            @include my-margin-function('right', 20px);
+            font-family: arial;
+            @include my-margin-function('top', 5px);
+            @include font-size-def(x-small);
+            float: left;
+            a{
+                @extend %anchorStyle;
+            }
+        }
+    }   
+}
+
+/*Nested SCSS for Page 1 button display*/
+.quoteButton{
+    padding-left: my-padding-margin-function(10px, 15px);
+    @include borderRadiusProp(25px);
+    background: $brand;
+    padding: my-padding-margin-function(10px, 10px);
+    width: 100px;
+    height: 9px;
+    @include setColor($white);
+    @include my-margin-function('top', -15px);
+    a{
+        @include setColor($white);
+    }
+}
+
+/*Hover on image to change background color*/
+.headerImage:hover { box-shadow: inset 1263px 0px rgba(78, 161, 158, .50);}
+
+/*Nested SCSS for Page 1 Image display*/
+.headerImage{
+     background-image: url(imgOnBackground('1')); 
+    //background-image: url(../images/background_image1.jpg); 
+    height: 469px;
+    opacity: 0.5;
+    
+    .textAlignOnImageHeader{
+        position: relative;
+        top: 20%;
+        left: 20%;
+        width: 461px;
+        @extend %font-sans-serif;
+        @include font-size-def(22);
+        @include setColor($light-gray);
+    }
+    .textAlignOnImageDetail{
+        position: relative;
+        top: 23%;
+        left: 20%;
+        line-height: 1.5;
+        font-size: small;
+        width: 461px;
+        @extend %font-sans-serif;
+        @include setColor($light-gray);
+    }
+    .textAlignOnImageButton{
+        position: relative;
+        background: $light-gray;
+        @include borderRadiusProp(25px);
+        @include setColor($transparent-green);
+        padding: my-padding-margin-function(10px, 5px);
+        width: 130px;
+        height: 15px;
+        top: 30%;
+        left: 20%;
+        @include my-margin-function('top', -15px);
+        .anchorProperty{
+            text-decoration: none;
+            @include setColor($brand);
+        }
+    }
+}
+
+/*Nested SCSS for Page 2 display*/
+.grid2{
+    @include setupGrid(grid, repeat(5, 1fr), minmax(50px, auto), 5px);
+    .grid2-cell-one-row-1{
+       @include fontWeight(bold);
+        grid-column: 1 / 6;
+        griD-row : 1;
+        @extend %font-sans-serif;
+        @include setColor($brand);
+        @include font-size-def(12);
+        @include my-margin-function ('top', 30px);
+        @include my-margin-function ('bottom', 30px);
+        @include headerAlign (center);
+    }
+    .grid2-cell-one{
+        @include setGridColAndRows(1, 2);
+    }
+    .grid2-cell-two{
+        background-image: url(imgOnBackground('2')); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        @include setGridColAndRows(2, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid2-cell-three{
+        background-image: url(imgOnBackground('2')); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        @include setGridColAndRows(3, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid2-cell-four{
+        background-image: url(imgOnBackground('2')); 
+        background-repeat: no-repeat;
+        width: 130px;
+        height: 300px;
+        @include setGridColAndRows(4, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid2-cell-five{
+        @include setGridColAndRows(5, 2);
+    }
+    .grid2-cell-header{
+        @extend %font-sans-serif;
+        @include font-size-def(large);
+        @include setColor($transparent-green);
+		@include my-margin-function('top', 145px);
+    }
+    .grid2-cell-detail{
+		@include my-margin-function('left', -30px);
+        width: 160%;
+        line-height: 15px;
+        @include font-size-def(x-small);
+        @include setColor($header-font);
+    }
+}
+
+/*Nested SCSS for Page 2 image display*/
+.grid3{
+    @include setupGrid(grid, repeat(6, 1fr), minmax(50px, auto), 5px);
+    @extend %backgroundGray;
+    .grid3-cell-one-row-1{
+        @include fontWeight(bold);
+        grid-column: 1 / 7;
+        griD-row : 1;
+        @extend %font-sans-serif;
+        @include setColor($brand);
+        @include font-size-def(12);
+		@include my-margin-function('top', 60px);
+        margin: my-padding-margin-function(auto, 0px);
+        @include my-margin-function('top', 50px);
+        @include my-margin-function('bottom', 10px);
+        @include headerAlign (center);
+    }
+    .grid3-cell-one{
+        @include setGridColAndRows(1, 2);
+    }
+    .grid3-cell-two{
+        @include setGridColAndRows(2, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (left);
+        .grid-3-cleaningImage{
+            background-image: url(imgOnBackground('3')); 
+            @extend %cleanImagesProp;
+        }
+    }
+    .grid3-cell-three{
+        @include setGridColAndRows(3, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        .grid-3-cleaningImage1{
+            background-image: url(imgOnBackground('15')); 
+            @extend %cleanImagesProp;
+        }
+    }
+    .grid3-cell-four{
+        @include setGridColAndRows(4, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        .grid-3-cleaningImage2{
+            background-image: url(imgOnBackground('16')); 
+            @extend %cleanImagesProp;
+        }
+    }
+    .grid3-cell-five{
+        @include setGridColAndRows(5, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        .grid-3-cleaningImage3{
+            background-size: 200px 200px;
+            background-image: url(imgOnBackground('17')); 
+            @extend %cleanImagesProp;
+        }
+    }
+    .grid3-cell-six{
+        @include setGridColAndRows(6, 2);
+    }
+    .grid3-cell-one-row-3{
+        grid-column: 1 / 7;
+        griD-row : 3;
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        @include borderRadiusProp(25px);
+        background: $brand;
+        padding: my-padding-margin-function(10px, 10px);
+        width: 200px;
+        height: 10px;  
+		@include my-margin-function('top', 50px);
+        @include setColor($white);
+        .anchorProperty{
+            text-decoration: none;
+            @include setColor ($white);
+        }
+    }
+    .grid-3-header{
+        @include font-size-def(large);
+        @include setColor($brand);
+		@include my-margin-function('left', 5px);
+		@include my-margin-function('top', 30px);
+        text-align: justify;
+    }
+    
+    .grid3-cell-detail{
+        width: 142px;
+		@include my-margin-function('top', 20px);
+		@include my-margin-function('left', 5px);
+        @include font-size-def(x-small);
+        @include setColor($darker-color);
+        line-height: 18px;
+        text-align: left;
+    }
+}
+
+/*Nested SCSS for Page 3 display*/
+.grid4{
+    @include setupGrid(grid, repeat(2, 1fr), minmax(50px, auto), 5px);
+	@include my-margin-function('bottom', 50px);
+	@include my-margin-function('top', 90px);
+    .grid4-cell-one{
+        background-image: url(imgOnBackground('11')); 
+        //background-size: 450px, 550px;
+        background-position: center right;
+		@include my-margin-function('left', 250px);
+        height:550px;
+        width: 350px;
+        @include setGridColAndRows(1, 1);
+        @include headerAlign (center);
+    }
+    .grid4-cell-two{
+        @include setGridColAndRows(2, 1);
+        @include headerAlign (left);
+    }
+    .grid4-italics{
+        @include setColor($header-font);
+    }
+    .grid4-header{
+        @include fontWeight(bold);
+        @extend %font-sans-serif;
+        @include setColor($brand);
+        @include font-size-def(12);
+		@include my-margin-function('top', 20px);
+    }
+    .grid4-details{
+        @include my-margin-function('top', 10px);
+        @include font-size-def(small);
+        line-height: 1.5;
+        @include setColor($header-font);
+    }
+    .grid4-image{
+        background-image: url(imgOnBackground('5')); 
+        height:80px;
+        width: 70px;
+        float: left;
+		@include my-margin-function('right', 30px);
+    }
+    .grid4-image-header{
+        @include setColor($brand);
+        @include font-size-def(0);
+    }
+    .grid4-image-details{
+		@include my-margin-function('top', 10px);
+        @include font-size-def(small);
+        line-height: 1.5;
+        @include setColor($header-font);
+    }
+    .grid4-alignContent{
+		@include my-margin-function('top', 50px);
+    }
+    .grid4-moreServices{
+        @include borderRadiusProp(25px);
+        background: $brand;
+        padding: my-padding-margin-function(10px, 10px);
+        width: 95px;
+        height: 10px;  
+		@include my-margin-function('top', 50px);
+        @include setColor($white);
+        text-align: center;
+    }
+}
+
+/*Nested SCSS for Page 4 display*/
+.grid5{
+    @include setupGrid(grid, repeat(5, 1fr), minmax(50px, auto), 5px);
+	@include my-margin-function('bottom', 160px);
+    .grid5-cell-one-row-1{
+        grid-column: 1 / 6;
+        griD-row : 1;
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        background-color: $brand;
+        width: 100%;
+        height: 200px;
+        @include my-margin-function('top', 30px);
+        .grid5-header{
+			@include my-margin-function('top', 77px);
+            @include font-size-def(xx-large);
+            @include setColor($white);
+            .anchorProperty{
+                text-decoration: none;
+                @include setColor($brand);
+            }
+        }
+        .grid5-button{
+            @include borderRadiusProp(25px);
+            background: $white;
+            padding: my-padding-margin-function(10px, 5px);
+            height: 10px;  
+			@include my-margin-function('top', 50px);
+            @include setColor($brand);
+            text-align: center;
+			@include my-margin-function('left', 35px);
+            @include font-size-def(small);
+        }
+    }
+    .grid5-cell-one-row-2{
+        grid-column: 1 / 6;
+        griD-row : 2;
+        @extend %font-sans-serif;
+        @include fontWeight(bold);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+        @include setColor($brand);
+        @include font-size-def(12);
+		@include my-margin-function('top', 70px);
+        @include my-margin-function('bottom', 55px);
+    }
+    .grid5-cell-one{
+        @include setGridColAndRows(1, 3);
+        @include headerAlign (center);
+    }
+    .grid5-cell-two{
+        background-image: url(imgOnBackground('6'));
+        background-position: center ;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 250px;
+        @include borderRadiusProp(50%);
+        @include setGridColAndRows(2, 3);
+		@include my-margin-function('right', 30px);
+        @include headerAlign (center);
+    }
+    .grid5-cell-three{
+        background-image: url(imgOnBackground('6')); 
+        background-position: center ;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 250px;
+        @include borderRadiusProp(50%);
+        @include setGridColAndRows(3, 3);
+		@include my-margin-function('right', 30px);
+        @include headerAlign (center);
+    }
+    .grid5-cell-four{
+        background-image: url(imgOnBackground('6')); 
+        background-position: center ;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 250px;
+        @include borderRadiusProp(50%);
+        @include setGridColAndRows(4, 3);
+		@include my-margin-function('right', 30px);
+        @include headerAlign (center);
+    }
+    .grid5-cell-five{
+        @include setGridColAndRows(5, 3);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid5-name{
+        @include setColor($brand);
+        @include font-size-def(large);
+        @include my-margin-function('top', 270px);
+        @extend %font-sans-serif;
+    }
+    .grid5-role{
+        @include setColor($header-font);
+        line-height: 35px;
+        @include font-size-def(small);
+    }
+    // .grid5-image{
+    //     background-image: url(imgOnBackground('7')); 
+    //     width: 100px;
+    //     height: 35px;
+	// 	@include my-margin-function('top', -10px);
+	// 	@include my-margin-function('left', 75px);
+    // }
+}
+
+/*Nested SCSS for Page 5 display*/
+.grid6{
+    @include setupGrid(grid, repeat(6, 1fr), minmax(50px, auto), 5px);
+    @extend %backgroundGray;
+    padding-bottom: my-padding-margin-function(10px, 80px);
+    .grid6-cell-one-row-1{
+        grid-column: 1 / 7;
+        griD-row : 1;
+        @extend %font-sans-serif;
+        @include fontWeight(bold);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+		@include setColor($brand);
+        @include font-size-def(12);
+		@include my-margin-function('top', 50px);
+        @include my-margin-function('bottom', 55px);
+        
+    }
+    .grid6-cell-one{
+        @include setGridColAndRows(1, 2);
+    }
+    .grid6-cell-two{
+        margin: my-padding-margin-function(10px, 0px);
+        @extend %backgroundWhite;
+        @include setGridColAndRows(2, 2);
+        @include headerAlign (center);
+       // @include borderProp(1px solid $brand);
+    }
+
+    .grid6-cell-two:hover{
+        @include borderProp(1px solid $brand);
+    }
+    // .grid6-cell-two :hover{
+    //     @include borderProp(1px solid $brand);
+    // }
+    .grid6-cell-three{
+        margin: my-padding-margin-function(10px, 0px);
+        @extend %backgroundWhite;
+        @include setGridColAndRows(3, 2);
+        @include headerAlign (center);
+    }
+    .grid6-cell-three:hover{
+        @include borderProp(1px solid $brand);
+    }
+    .grid6-cell-four{
+        margin: my-padding-margin-function(10px, 0px);
+        // @include borderProp(1px solid $brand);
+        // border-bottom: none;
+        @extend %backgroundWhite;
+        @include setGridColAndRows(4, 2);
+        @include headerAlign (center);
+    }
+    .grid6-cell-four:hover{
+        @include borderProp(1px solid $brand);
+    }
+    .grid6-cell-five{
+        margin: my-padding-margin-function(10px, 0px);
+        @extend %backgroundWhite;
+        @include setGridColAndRows(5, 2);
+        @include headerAlign (center);
+    }
+    .grid6-cell-five:hover{
+        @include borderProp(1px solid $brand);
+    }
+    .grid6-cell-six{
+        @include setGridColAndRows(6, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid6-row1{
+        background-image: url(imgOnBackground('8')); 
+        height: 40px;
+        width: 40px;
+        margin: my-padding-margin-function(auto, 0px);
+    }
+    .grid6-row2{
+		@include setColor($brand);
+        padding-top: my-padding-margin-function(10px, 0px);
+    }
+
+    hr{
+        width: 60px;
+        @include borderProp(solid .5px);
+		@include setColor($lightest-gray);
+    }
+    .grid6-row3{
+		@include setColor($header-font);
+        font-weight: 200;
+        @include font-size-def(xx-large);
+    }
+    .grid6-row4{
+		@include setColor($header-font);
+        @include font-size-def(small);
+    }
+    ul{
+        @include font-size-def(small);
+        line-height: 25px;
+		@include setColor($header-font);
+    }
+    .grid6-row5{
+        background-color: $brand;
+		@include setColor($white);
+        height: 35px;
+        width: 200px;
+        padding-top: my-padding-margin-function(10px, 0px);
+    }
+    .anchorProperty{
+        text-decoration: none;
+        @include setColor($white);
+    }
+}
+
+/*Nested SCSS for Page 6 display*/
+.grid7{
+    @include setupGrid(grid, repeat(5, 1fr), minmax(50px, auto), 5px);
+    .grid7-cell-one-row-1{
+        grid-column: 1 / 6;
+        griD-row : 1;
+        @include fontWeight(bold);
+        @extend %font-sans-serif;
+		@include setColor($brand);
+        @include font-size-def(12); 
+        padding: my-padding-margin-function(10px, 50px); 
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid7-cell-one{
+        @include setGridColAndRows(1, 2);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid7-cell-two{
+        background-image: url(imgOnBackground('9')); 
+        width: 250px;
+        height: 200px;
+		@include my-margin-function('right', 15px);
+        @include borderRadiusProp(3%);
+        @include setGridColAndRows(2, 2);
+        @include headerAlign (center);
+    }
+    .grid7-cell-three{
+        background-image: url(imgOnBackground('10')); 
+        width: 250px;
+        height: 200px;
+		@include my-margin-function('right', 15px);
+        @include borderRadiusProp(3%);
+        @include setGridColAndRows(3, 2);
+        @include headerAlign (center);
+    }
+    .grid7-cell-four{
+        background-image: url(imgOnBackground('11')); 
+        width: 250px;
+        height: 200px;
+        background-size: 250px 200px;
+		@include my-margin-function('right', 15px);
+        @include borderRadiusProp(3%);
+        @include setGridColAndRows(4, 2);
+        @include headerAlign (center);
+    }
+    .grid7-cell-one-row-3{
+        grid-column: 1 / 5;
+        griD-row : 3;
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid7-date{
+		@include my-margin-function('top', 85%);
+        text-align: left;
+        @include font-size-def(small);
+		@include setColor($header-font);
+    }
+    .grid7-header{
+        @include setColor($brand);
+        padding-top: my-padding-margin-function(10px, -5px);
+        line-height: 1.5;
+        text-align: left;
+        @include font-size-def(large);
+    }
+    .grid7-details{
+		@include setColor($header-font);
+        line-height: 1.5;
+        @include font-size-def(small);
+        @include headerAlign (justify);
+    }
+    .grid7-name{
+        height: 5px;
+        width: 5px;
+        @include borderRadiusProp(25px);
+        padding: my-padding-margin-function(10px, 5px);
+		@include my-margin-function('top', 15px);
+        background-color: $darker-color;
+    }
+    .grid7-by{
+        @include font-size-def(small);
+        width: 80px;
+        padding-left: 35px;
+		@include setColor($header-font);
+    }
+}
+
+/*Nested SCSS for Testimonials display*/
+.divisionTestimonials{
+	@include my-margin-function('top', 270px);
+	@include setColor($brand);
+    @include font-size-def(12);
+    @extend %backgroundGray;
+    padding-bottom: my-padding-margin-function(10px, 22px);
+    .divHeading{
+        text-align: center;
+        @include fontWeight(bold);
+        @extend %font-sans-serif;
+        padding: my-padding-margin-function(10px, 50px) my-padding-margin-function(10px, -10px);
+    }
+    .divImage{
+        background-image: url(imgOnBackground('6')); 
+        background-position: center ;
+        background-repeat: no-repeat;
+        padding-bottom: my-padding-margin-function(10px, 45px);
+        height: 300px;
+        @include my-margin-function('top', -30px);
+    }
+    .divDetails{
+		@include setColor($header-font);
+        text-align: center;
+        @include font-size-def(medium);
+        line-height: 1.5;
+    }
+    .divButton{
+		@include my-margin-function('top', 10px);
+		@include my-margin-function('left', 40%);
+        padding-top: my-padding-margin-function(10px, 0px);
+		@include setColor($white);
+        background-color: $transparent-green;
+        height: 30px;
+        width: 250px;
+        @include font-size-def(medium);
+        text-align: center;
+    }
+}
+
+
+/*Nested SCSS for Page 7 display*/
+.grid8{
+    @include setupGrid(grid, repeat(4, 1fr), minmax(50px, auto), 5px);
+    .grid8-cell-one-row-1{
+        grid-column: 1 / 6;
+        grid-row : 1;
+        @include fontWeight(bold);
+        position: static;
+        width: 200px;
+        height: 16px;
+        @extend %font-sans-serif;
+		@include setColor($brand);
+        @include font-size-def(12);
+        padding: my-padding-margin-function(10px, 50px);
+        margin: my-padding-margin-function(auto, 0px);
+        @include headerAlign (center);
+    }
+    .grid8-cell-one{
+        background-image: url(imgOnBackground('9'));
+        background-size: 500px, 400px; 
+        background-position: center right;
+        padding-right: my-padding-margin-function(10px, -5px);
+        width: 100%;
+        height: 200px;
+        @include setGridColAndRows(1, 2);
+        @include headerAlign (center);
+        // .grid8-scroll1{
+		// 	@include my-margin-function('left', 10px);
+        //     opacity: .5;
+		// 	@include setColor($white);
+        //     height: 18px;
+        //     width: 18px;
+        //     @include borderRadiusProp(25px);
+        //     padding: my-padding-margin-function(10px, -0px);
+		// 	@include my-margin-function('top', 90px);
+        //     background-color: $transparent-green;
+        // }
+        .grid8-text {
+            color: transparent;
+            @include my-margin-function('left', 100px);
+            @include my-margin-function('top', 75px);
+        }
+    }
+    .grid8-cell-one:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);   
+        .grid8-text {
+            color: $white;
+            @include font-size(20px);
+            position: absolute;
+        }
+    }
+    .grid8-cell-two{
+        background-image: url(imgOnBackground('10'));
+        
+        background-position: center right;
+        padding-right: my-padding-margin-function(10px, -5px);
+        width: 100%;
+        height: 200px;
+        @include setGridColAndRows(2, 2);
+        @include headerAlign (center);
+        .grid8-text {
+            color: transparent;
+            @include my-margin-function('left', 100px);
+            @include my-margin-function('top', 90px);
+        }
+    }
+    .grid8-cell-two:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);   
+        .grid8-text {
+            color: $white;
+            @include font-size(20px);
+            position: absolute;
+        }
+    }
+    .grid8-cell-three{
+        background-image: url(imgOnBackground('11')); 
+        background-position: center right;
+        padding-right: my-padding-margin-function(10px, -5px);
+        width: 100%;
+        height: 200px;
+        @include setGridColAndRows(3, 2);
+        @include headerAlign (center);
+        .grid8-text {
+            color: transparent;
+            @include my-margin-function('left', 120px);
+            @include my-margin-function('top', 90px);
+        }
+    }
+    .grid8-cell-three:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);   
+        .grid8-text {
+            color: $white;
+            @include font-size(20px);
+            position: absolute;
+        }
+    }
+    .grid8-cell-four{
+        background-image: url(imgOnBackground('12')); 
+        background-position: center right;
+        padding-right: my-padding-margin-function(10px, -5px);
+        width: 100%;
+        height: 200px;
+        @include setGridColAndRows(4, 2);
+        @include headerAlign (center);
+        // .grid8-scroll2{
+		// 	@include my-margin-function('left', 277px);
+        //     opacity: .5;
+		// 	@include setColor($white);
+        //     height: 18px;
+        //     width: 18px;
+        //     @include borderRadiusProp(25px);
+        //     padding: my-padding-margin-function(10px, 0px);
+		// 	@include my-margin-function('top', 90px);
+        //     background-color: $transparent-green;
+        // }
+        .grid8-text {
+            color: transparent;
+            @include my-margin-function('left', 100px);
+            @include my-margin-function('top', 75px);
+        }
+    }
+    .grid8-cell-four:hover {
+        box-shadow: inset 0 0 0 100px rgba(78, 161, 158, .50);   
+        .grid8-text {
+            color: $white;
+            @include font-size(20px);
+            position: absolute;
+        }
+    }
+    .grid8-image{
+        background-image: url(imgOnBackground('13')); 
+        width: 100%;
+        height: 600px;
+        grid-column: 1 / 6;
+        griD-row : 3;
+		@include my-margin-function('top', -5px);
+        .grid8-form{
+            @extend %backgroundWhite;
+            height: 440px; 
+            width: 300px; 
+            float: right;
+			@include my-margin-function('top', 100px);
+			@include my-margin-function('right', 200px);
+        }
+        .grid8-heading{
+			@include setColor($brand);
+            @include font-size-def(2);
+            font-weight: bold;
+			@include my-margin-function('left', 50px);
+			@include my-margin-function('top', 25px);
+        }
+        .grid8-inputText{
+            font-style: italic;
+            padding: my-padding-margin-function(10px, -10px) my-padding-margin-function(10px, 0px); 
+			@include my-margin-function('left', 27px);
+            height: 35px;
+            background-color:$lighter-gray;
+            @include borderProp(none);
+            width: 223px;
+			@include my-margin-function('top', 30px);
+			@include setColor($dark-gray);
+            @include font-size-def(x-small);
+        }
+        .grid8-inputTextArea{
+			@include my-margin-function('left', 27px);
+            height: 80px;
+            background-color:$lighter-gray;
+            @include borderProp(none);
+            width: 223px;
+			@include my-margin-function('top', 20px);
+			@include setColor($dark-gray);
+            @include font-size-def(x-small);
+            padding: my-padding-margin-function(10px, -10px) my-padding-margin-function(10px, 0px); 
+            font-style: italic;
+        }
+        .grid8-button{
+            height: 40px;
+            width: 246px;
+			@include my-margin-function('top', 30px);
+			@include my-margin-function('left', 27px);
+            background-color: $brand;
+			@include setColor($white);
+            @include borderProp(none);
+        }
+    }
+}
+
+/*Nested SCSS for contact Us display*/
+.grid9{
+	@include my-margin-function('bottom', 80px);
+	@include my-margin-function('top', 50px);
+    @include setupGrid(grid, repeat(6, 1fr), minmax(50px, auto), 15px);
+    .grid9-cell-one{
+        @include setGridColAndRows(2, 1);
+        width: 222px;
+        .grid9-header1{
+            @include font-size-def(large);
+			@include setColor($brand);
+            font-weight: bold;
+        }
+        .grid9-details{
+            line-height: 1.6;
+			@include my-margin-function('top', 20px);
+            @include font-size-def(x-small);
+			@include setColor($header-font);
+        }
+        .grid9-bold{
+            font-weight: bold;
+        }
+    }
+    .grid9-cell-two{
+        @include setGridColAndRows(3, 1);
+    }
+    .grid9-cell-three{
+        @include setGridColAndRows(4, 1);
+    }
+    .grid9-cell-four{
+        @include setGridColAndRows(5, 1);
+    }
+    .grid9-header1{
+        @include font-size-def(small);
+        font-weight: bold;
+		@include setColor($header-font);
+		@include my-margin-function('top', 5px);
+    }
+    ul {
+        @include font-size-def(x-small);
+        list-style-type: none;
+        padding: my-padding-margin-function(10px, 0px) my-padding-margin-function(10px, -10px);
+        overflow: hidden;
+        line-height: 1.9;
+		@include setColor($header-font);
+    }
+    .grid9-details1{
+		@include my-margin-function('top', 20px);
+        @include font-size-def(x-small);
+        line-height: 1.9;
+		@include setColor($header-font);
+    }
+    .grid9-image{
+        background-image: url(imgOnBackground('14')); 
+        height: 23px;
+        width: 90px;
+    }
+    a{
+        text-decoration: none;
+        @include setColor($header-font);
+    }
+}

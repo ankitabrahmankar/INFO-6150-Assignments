@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- This file contains signup form for Adventures company-->
+<!--HTML start-->
+<html>
+  <title>Simple Sign up from</title>
+  <head>
+    <!--Head section of HTML-->
+    <!--This meta tag controls page's dimensions and scaling-->
+    <!--width=device-width part sets the width of the page to follow the screen-width of the device-->
+    <!--initial-scale=1.0 part sets initial zoom level when the page is first loaded by the browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This meta tag gives description of web page-->
+    <meta name="description" content="Using HTML elements and attributes">
+    <!--This meta tag displays author of the page-->
+    <meta name="author" content="Ankita Brahmankar">
+    <!--This meta tag is used to display an HTcoML page rrectly, by letting browser know the character set used in the page-->
+    <meta charset="UTF-8">
+    <!--Title displayed on the tab-->
+    <title>SignUp Form</title>
+    <!-- Add icon library -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--Some styling used to display the page in decorative way-->
+    <!--Style tag start-->
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      input[type=text], input[type=password],input[type=email] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      button {
+      color: black;
+      padding: 14px 0;
+      margin: 10px 0;
+      width: 48%;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+    </style>
+    <!--Style tag end-->
+  </head>
+  <!--Head tag end-->
+  <!--Body tag start-->
+  <body>
+    <!--Form tag used to create form for sign up -->
+    <form action="Homepage.html">
+       <!--h1 tag to style headings-->
+      <h1>SIGN UP</h1>
+      <div class="formcontainer">
+      <div class="container">
+         <!--label tag defined label for an element-->
+        <label for="uname"><strong>Username</strong></label>
+         <!--Input text validation for required-->
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="mail"><strong>E-mail</strong></label>
+         <!--Input text validation for email format $ required-->
+        <input type="email" placeholder="Enter E-mail" name="mail" required>
+        <label for="psw"><strong>Password</strong></label>
+         <!--Input text validation for required-->
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <!--Button tag to insert clicable button-->
+      <button type="submit"><strong>SIGN UP</strong></button>
+      <div class="container" style="background-color: #eee">
+        <label style="padding-left: 15px">
+        </label>
+        <!--span tag to styling and anchor tag for hyperlink to another page-->
+        <span class="psw"><a href="login.html">Already have account? Login Here</a></span>
+      </div>
+    </form>
+    <!--Form tag end-->
+    <!--Footer tag start-->
+      <footer>
+      <div>
+          <hr>
+          <h3>Adventure</h3>
+              <p>Gateway for your routine! Lorem ipsum dolor sit amet.</p>
+              <p>Copyright &copy;2020, My Website</p>
+          <a href="Homepage.html">Back</a>
+      </div>
+    </footer>
+  <!--Form tag end-->
+  </body>
+  <!--Body tag end-->
+</html>
+<!--HTML tag end-->

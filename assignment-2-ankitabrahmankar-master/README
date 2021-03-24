@@ -1,0 +1,17 @@
+This is website to book outdoor activity like camping inorder to escape from life's daily and mundane routine.
+A space to share adventure tips & thoughts to get you outside and connected with the outdoors.
+
+This project contains HTML files with different HTML attributes used to build HTML form and pages. The goal of this assignment is to explore HTML elements, attributes and to use GitHub for source control. 
+The HTML form page contains different input element types and validations that execute on them once 'Submit' button is pressed.
+This project contains -
+ 1. images folder where all the images related to website are stored.
+ 2. Homepage.html
+ 3. login.html
+ 4. signup.html
+ 5. register1.html
+ 6. aboutus.html
+ 7. activities.html
+ 8. contactus.html
+ 9. blog.html
+ 10.Thankyou.html
+ 11..gitignore file that ignores all logs

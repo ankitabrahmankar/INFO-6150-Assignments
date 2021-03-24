@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- This file contains all the information required to register for camping and services and information about the camping company Adventures-->
+<!--HTML start-->
+<html>
+    <head>
+        <!--Head section of HTML-->
+        <!--This meta tag controls page's dimensions and scaling-->
+        <!--width=device-width part sets the width of the page to follow the screen-width of the device-->
+        <!--initial-scale=1.0 part sets initial zoom level when the page is first loaded by the browser-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Add icon library -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--This meta tag gives description of web page-->
+        <meta name="description" content="Using HTML elements and attributes">
+        <!--This meta tag displays author of the page-->
+        <meta name="author" content="Ankita Brahmankar">
+         <!--This meta tag is used to display an HTML page correctly, by letting browser know the character set used in the page-->
+         <meta charset="UTF-8">
+        <!--Title displayed on the tab-->
+        <title>Get excited for adventure!</title>
+        <!--Some styling used to display the page in decorative way-->
+        <!--Style tag start-->
+        <style>
+            *{
+            box-sizing: border-box;
+            }
+
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Float four columns side by side */
+            .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+            }
+
+            /* Remove extra left and right margins, due to padding */
+            .row {margin: 0 -5px;}
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            }
+
+            /* Style the counter cards */
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            }
+            A {text-decoration: none;}
+            .top-right {
+                    position: absolute;
+                    top: 25px;
+                    right: 16px;
+                }
+            .centered {
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: Courier;
+                    color: white;
+                    font-size:70px;
+                    
+                }
+                li {
+                     float: left;
+                    }
+
+                li a {
+                    display: block;
+                    color: white;
+                    text-align: left;
+                    padding: 16px;
+                    background-color: #111111;
+                }
+               
+                li button{
+                    display: block;
+                    color: white;
+                    text-align: left;
+                    padding: 16px;
+                    background-color: #111111;
+                    
+                }
+        </style>
+        <!--Style tag end-->
+    </head>
+
+     <!--Body start-->
+    <body>
+         <!--section tags to display different sections on a page-->
+         <!--This section indicates the first part of  message and contact details-->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <hr>
+             <!--p tags to display contents inside a paragraph-->
+            <p>Welcome and get ready for adventure!</p>
+            <hr>
+            <div class="top-right">Phone: 617-345-2222 Email - help@adventure.com</div>
+        </section>
+
+        <!--Another section of name and different list of tab-->
+        <section>
+            <!--h1 tag to style headings-->
+            <h1>Adventure</h1>
+            <!--Used div tag to enclose list tab contents inside a div-->
+            <div>
+                 <!--ul tag added for unordered list-->
+                <ul>
+                    <!--li tag added to represent the item in a unordered list-->
+                    <!-- a tag used to provide hyperlink -->
+                    <li><a href="register1.html">Register</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <!--button tag used to define a clicable link button which will further navigate to the other HTML page-->
+                    <li><button class=btn onclick="window.location.href='signup.html';"><i class='fas fa-user-alt'></i>SignUp</button></li>
+                    <li><button class=btn onclick="window.location.href='login.html';"><i class='fa fa-sign-in'></i> Login</button></li>
+                </ul> 
+                <!--ul tag END-->
+            </div>
+             <!--div tag END-->
+        </section>
+        
+        <!-- another sction tag  for defining the section on page which contains image and text on image-->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <hr>
+             <!--Used div tag to enclose image and text on image inside one block-->
+            <div class="container">
+                <!--used img to insert image on page-->
+                <img src="./images/star1.jpg" alt="Camping" style="width:100%;">
+                <div class="centered">A space to share adventure tips & thoughts to get you outside and connected with the outdoors.</div>
+            </div>  
+        </section>
+        
+        <!--Another section on page to define why choose the company-->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <hr>
+            <!--p tag diplay content and b tag to format that content to bold-->
+            <p style="color:black;font-size:30px;text-align: center; font-family: Arial, Helvetica, sans-serif;"><b>Why choose us</b></p>
+            <!--span tag to provide different styling to display images inline-->
+            <span>
+                <img src="images/icon.PNG" style="height: 10%; width: 10%;">
+                <a href="section.html"><b>Pick a time</b></a> 
+                <p style="display:inline">Select from our calender</p>
+            </span>
+            <span>
+                <img src="images/icon.PNG" style="height: 10%; width: 10%;">
+                <a href="section.html">Book instantly</a>
+                <p style="display:inline">Sign in to book</p>
+            </span>
+            <span>
+                <img src="images/icon.PNG" style="height: 10%; width: 10%;">
+                <a href="section.html">Your pro arrives</a>
+                <p style="display:inline">subscribe for the pro</p>
+            </span>
+            <hr> 
+       </section>
+
+       <!--Another section to define the Activites provided by company section-->
+       <section>
+        <p style="color:black;font-size:30px;text-align: center; font-family: Arial, Helvetica, sans-serif;"><b>Our Activities</b></p>
+           <div>
+               <!--span tag to provide different styling to display images inline-->
+               <span>
+                   <img src="./images/campingjpg.jpg" style="height: 10%; width: 10%;">
+                   <p style="display:inline">Camping</p>
+                </span>
+                <span>
+                   <img src="./images/treking.jpg" style="height: 10%; width: 10%;">
+                   <p style="display:inline">Trekking</p>
+                </span>
+                <span>
+                   <img src="./images/hunting.jpg" style="height: 10%; width: 10%;">
+                   <p style="display:inline">Hunting</p>
+                </span>
+                <hr>
+           </div>
+        </section>
+    
+        <!--Another section to define company information-->
+        <section>
+            <!--Used div tag to enclose all the text information and image inside a div-->
+            <div>
+                <p><img src="images/company.jpg" height="300px" width="400px" border="1px" style="float: left; clear: left;"></p>
+                <p style = "font-size:30px; text-align:center; font-family: Arial, Helvetica, sans-serif;"><b>About Company</b></p>
+                <p>We are ready to plan amazing outing for you to free you from your routine life</p>
+                <p><b>1. We know the area</b></p>
+                <p>We will plan a safe journey for you</p>
+                <p><b>2. Quality of planning</b></p>
+                <p>We will provide itenary along with safety kits and tour guides to help you</p>
+                <p><b>3. Experienced guide</b></p>
+                <p>Our team members are hightly qualified and experienced for the journey</p>
+            </div>
+            <!--End of div-->
+        </section>
+
+        <!--Another section to define team related information-->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <div style="clear: left;"><hr></div>
+            <p style="color:black;font-size:30px;text-align:center; font-family: Arial, Helvetica, sans-serif;"><b>Our Team</b></p>
+            <div class="card_team">
+                <div class="container-left" style="float: left; width: 200px;">
+                    <!--img tag to insert image and it's attributes to style the image-->
+                    <img src="images/avatar.jpg" alt="Avatar" style="width:50%; height:50%;">
+                    <!--h4 tag to style headings and b tag to make it bold-->
+                    <h4><b>John Doe</b></h4> 
+                    <p>Trekking Expert</p> 
+                </div>
+
+                <div class="container-middle" style="float: left; width: 200px;">
+                    <img src="images/avatar.jpg" alt="Avatar" style="width:50%; height:50%;">
+                    <h4><b>Kozub Caden</b></h4>
+                    <p>Camping Expert</p> 
+                </div>
+                <div class="container-right" style="float: left; width: 200px;">
+                    <img src="images/avatar.jpg" alt="Avatar" style="width:50%; height:50%;">
+                    <h4><b>Rice Ella</b></h4> 
+                    <p>Huntin Expert</p> 
+                </div>
+                <div style="clear: left;"><hr></div>
+            </div>
+        </section>
+       
+        <!--Another section to define pricing information in page -->
+        <section>
+            <!--used div tag to enclode the text and styling inside one block-->
+            <div>
+                <p style="clear:left;color:black;font-size:30px;text-align:center; font-family: Arial, Helvetica, sans-serif;"><b>Pricing</b></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <!--h3 tag to style headings-->
+                    <h3>Hiking</h3>
+                    <p>Foot Trails text</p>
+                    <p>Bike ways</p>
+                    <p>Only $130</p>
+                  </div>
+                </div>
+            
+                <div class="column">
+                  <div class="card">
+                    <!--h3 tag to style headings-->
+                    <h3>Camping</h3>
+                    <p>Tent Camping</p>
+                    <p>Tree house</p>
+                    <p>Only $130</p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <!--h3 tag to style headings-->
+                    <h3>Trekking</h3>
+                    <p>Winter/Snow Trek</p>
+                    <p>High Mountains Trek</p>
+                    <p>Only $130</p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <!--h3 tag to style headings-->
+                    <h3>Hunting</h3>
+                    <p>Forest Hunting</p>
+                    <p>Bird Hunting</p>
+                    <p>Only $130</p>
+                  </div>
+                </div>
+              </div>    
+        </section>
+
+        <!--Another section to define recent blogs in page -->
+        <section>
+            <div>
+                <!--hr tag for horizontal lines-->
+                <hr>
+                <p style="clear:left;color:black;font-size:30px;text-align:center; font-family: Arial, Helvetica, sans-serif;"><b>Recent Blogs</b></p>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <h3>Make Campsite Alarm</h3>
+                    <!--Anchor tag to hyperlink to another page from redirection of the image-->
+                    <a href="http://howtocampout.com/make-campsite-intruder-alarm/">
+                        <img alt="alarm" src="images/alarm.jpg"
+                        width="150" height="70">
+                    <p>Wouldn’t it be awesome to have a way to know if something has entered your campsite?</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <h3>How to chose campsite</h3>
+                    <a href="http://howtocampout.com/5-ws-picking-a-campsite/">
+                        <img alt="Campsite" src="images/campsite.jpg"
+                        width="150" height="70">
+                    <p> Wouldn’t it be awesome to have a way to know if something has entered your campsite?</p>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                      <h3>CamperVan for your trips</h3>
+                      <a href="https://bearfoottheory.com/campervan-rental-companies-us-road-trip/">
+                          <img alt="campervan" src="images/campervan.jpg"
+                          width="150" height="70">
+                      <p>Get off the beaten path, and have a more spontaneous vacation. How about CamperVan?</p>
+                    </div>
+                  </div>
+        </section>
+
+        <!--Another section to define testimonials of the company-->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <hr>
+            <p style="color:black;font-size:30px;text-align: center; font-family: Arial, Helvetica, sans-serif;"><b>Testimonials</b></p>
+            <!--img tag to insert image on page and attributes to resize the image-->
+            <img alt="campervan" src="images/Jeff-Weiner-LinkedIn-Ceo.jpg"
+            width="150" height="100" style="margin-left: 700px;">
+            <p style="text-align: center;">In order to inspire people, that's going to have to come from somewhere deep inside of you.</p>
+            <p style="background-color: black; color: white; font-size: 20px; text-align: center; display: inline; margin-left: 650px;"><b>CEO,Founder of Company</b></p>
+        </section>
+
+        <!--Another section to define the projects of the company -->
+        <section>
+            <!--hr tag for horizontal lines-->
+            <hr>
+            <p style="color:black;font-size:30px;text-align: center; font-family: Arial, Helvetica, sans-serif;"><b>Our Projects</b></p>
+            <!--span tag to provide different styling to display images inline-->
+            <span>
+                <a href="https://google.com">
+                <img alt="project1" src="images/campingjpg.jpg"
+                width="700" height="400">
+                </a>
+            </span>
+            <span>
+                <a href="https://google.com">
+                <img alt="project2" src="images/treking.jpg"
+                width="700" height="400">
+                </a>
+            </span>
+        </section>  
+        
+        <!--Another section to display the form -->
+        <section>
+            <!--Used form tag to -->
+            <form method="GET" action="Thankyou.html" style="float: Left;">
+                <div class="card">
+                <fieldset>
+                    <legend>Get information of upcoming camping</legend>
+                    <div>
+                        <!--label tag defined label for an element-->
+                        <label>Full Name</label>
+                         <!--Input text validation for maximum length 10 & required-->
+                        <input type="text" name="fullname" placeholder="Your Name" required maxlength="10">
+                    </div>
+                    <div>
+                        <!--Input type email validation for email & required-->
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="tel" name="phone" placeholder="Phone">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <input type="text" name="message" placeholder="message">
+                    </div>
+                    <div>
+                        <!--Button tag to add clicable button-->
+                        <button type="submit">Submit</button>
+                    </div>     
+                </fieldset>
+            </form>
+            <!--HTML form end-->
+        </section>
+
+        <!--Footer start-->
+        <footer id="main-footer" style="clear: left; margin-top: 200px;">
+            <hr>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <h2>Adventure</h2>
+                        <p>Gateway for your routine! Lorem ipsum dolor sit amet.</p>
+                        <p>Copyright &copy;2020, My Website</p>
+                    </div>
+                </div>
+                  
+                <div class="column">
+                      <div class="card">
+                        <h2>QuickView</h2>
+                        <p><a href="register1.html" style="color: black;">Register</a></p>
+                        <p><a href="activities.html" style="color: black;">Activities</a></p>
+                        <p><a href="aboutus.html" style="color: black;">About Us</a></p>
+                        <p><a href="blog.html" style="color: black;">Blogs</a></p>
+                        <p><a href="contactus.html" style="color: black;">Contact</a></p>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <h2>Services</h2>
+                        <p>Camping</p>
+                        <p>Hunting</p>
+                        <p>Trekking</p>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="card">
+                            <h2>Contact us</h2>
+                            <p>Contact: 617-908-6767</p>
+                            <p>Email: adventureHelp@gmail.com</p> 
+                        </div>
+                        </div>
+            </footer>
+            <!--Footer end-->
+    </body>
+    <!--Body end-->
+</html>
+<!--HTML end-->

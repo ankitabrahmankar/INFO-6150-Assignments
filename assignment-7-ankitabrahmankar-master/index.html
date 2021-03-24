@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Spreadsheet</title>
+        <link href="dist/main.css" , rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.2/rxjs.umd.js"></script>
+    </head>
+
+    
+    <body>
+        <h2 class="header">My Table</h2>
+
+        <INPUT type="button" class= "button" value="Add Row" onclick="appendRow()" />
+
+        <INPUT type="button" class= "button" value="Add Column" onclick="appendColumn()" />
+        
+        <INPUT type="button" class= "button" value="Delete Row" onclick="deleteRows()" />
+
+        <INPUT type="button" class= "button" value="Delete Column" onclick="deleteColumns()" />
+
+        <INPUT type="button" class= "button" value="ExportToCSV" onclick="exportTableToCSV('download.csv')" />
+
+        <INPUT type="button" id="upload"  class= "button" value="Upload" onclick="UploadCSV()" />
+
+        <INPUT type="file" id="fileUpload"/>
+
+        <TABLE id="dataTable" class="table">
+            <TR>
+             <td><input type="textbox[]" id="A1" value="A1" class="row" classname="row" onchange="myFunction(this.value, this.id)"></td>
+            </TR>
+        </TABLE>
+        <script src="create.js"></script>
+        <div id="dvCSV"></div>
+    </body>
+</html>

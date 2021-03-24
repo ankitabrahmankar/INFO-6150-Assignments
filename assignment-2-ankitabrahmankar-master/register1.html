@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- This file contains form to register for camping-->
+<!--HTML start-->
+<html>
+  <head>
+  <!--Head section of HTML-->
+  <!--This meta tag controls page's dimensions and scaling-->
+  <!--width=device-width part sets the width of the page to follow the screen-width of the device-->
+  <!--initial-scale=1.0 part sets initial zoom level when the page is first loaded by the browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    !--This meta tag gives description of web page-->
+        <meta name="description" content="Using HTML elements and attributes">
+        <!--This meta tag displays author of the page-->
+        <meta name="author" content="Ankita Brahmankar">
+         <!--This meta tag is used to display an HTcoML page rrectly, by letting browser know the character set used in the page-->
+         <meta charset="UTF-8">
+        <!--Title displayed on the tab-->
+        <title>Registration for activities</title>
+        <!--Style tag start-->
+        <style>
+            .item {
+              position: relative;
+              margin: 10px 0;
+              }
+        </style>
+        <!--End of style tag-->
+  </head>
+  <!--Head tag end-->
+  <!--Body tag start-->
+  <body>
+    <div >
+      <!--h1 tag to style headings-->
+      <h1 style="text-align: center;">Registration</h1>
+      <br/>
+    </div>
+
+    <!--used div to enclose all the tags in one block and named the div with class id = form-->
+    <div class="form">
+      <form action="Thankyou.html">
+        <fieldset>
+          <!--legend represents the caption for the content-->
+          <legend>Participant Information</legend>
+          <p>Participant</p>
+          <div class="item">
+              <!--label tag defined label for an element-->
+              <label for="fname"> Full Name<span>*</span></label>
+              <!--Input text validation required-->
+              <input id="fname" type="text" name="fname" required />
+          </div>
+
+          <div class="item">
+            <label for="activity">Activity #</label>
+            <input id="activity" type="text" name="activity" />
+          </div>
+              
+          <div class="item">
+            <label for="bdate">Birth Date </label>
+            <input id="bdate" type="date" name="bdate" />
+            <!--used i tag to insert icon-->
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+              
+          <div class="item">
+            <p>Occupation</p>
+            <!--select tag used to create dropdown list-->
+            <select>
+              <!--Option tag used to provide option in select list-->
+              <option selected value="" disabled selected></option>
+              <option value="Student" >Student</option>
+              <option value="Working">Working</option>
+              <option value="Service">Service</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Emergnecy Contact</legend>
+          <div class="colums">
+            <div class="item">
+              <label for="fname"> Full Name<span>*</span></label>
+              <input id="fname" type="text" name="fname" required/>
+            </div>
+          
+            <div class="item">
+              <label for="address1">Address</label>
+              <input id="address1" type="text"   name="address1" required />
+            </div>
+            
+            <div class="item">
+              <label for="city">City</label>
+              <input id="city" type="text"   name="city" />
+            </div>
+
+            <div class="item">
+              <label for="state">State</label>
+              <input id="state" type="text"   name="state" />
+            </div>
+                      
+            <div class="item">
+              <label for="eaddress">Email Address<span>*</span></label>
+              <input id="eaddress" type="email"   name="eaddress" required />
+            </div>
+            
+            <div class="item">
+              <label for="phone">Phone<span>*</span></label>
+              <input id="phone" type="tel"   name="phone" required />
+            </div>
+            
+            <div class="item">
+              <label for="zip">Zip</label>
+              <input id="zip" type="text"   name="zip" />
+            </div>
+                               
+            <div class="question">
+              <label>Relationship to Participants:</label>
+              <div class="question-answer">
+                <div>
+                  <!--Input tag with type radio button and option to select one -->
+                  <input type="radio" value="none" id="radio_1" name="participants"/>
+                  <label for="radio_1" class="radio"><span>Self</span></label>
+                </div>
+                <div>
+                  <input  type="radio" value="none" id="radio_2" name="participants"/>
+                  <label for="radio_2" class="radio"><span>Parents</span></label>
+                </div>
+                <div>
+                  <input  type="radio" value="none" id="radio_3" name="participants"/>
+                  <label for="radio_3" class="radio"><span>Guardian</span></label>
+                </div>
+                <div>
+                  <input  type="radio" value="none" id="radio_4" name="participants"/>
+                  <label for="radio_4" class="radio"><span>Friend</span></label>
+                
+                </div>
+              </div>
+            </div>
+        </fieldset>
+        
+        <!--Adding button to submit the form which will navigate to another HTML page-->
+        <div class="btn-block">
+            <button type="submit" href="/">Submit</button>
+        </div>
+
+    </form>
+  </div>
+  <!--end of div class form-->
+
+  <!--Footer start-->
+    <footer>
+      <div>
+          <hr>
+          <h3>Adventure</h3>
+              <p>Gateway for your routine! Lorem ipsum dolor sit amet.</p>
+              <p>Copyright &copy;2020, My Website</p>
+          <a href="Homepage.html">Back</a>
+      </div>
+    </footer>
+    <!--Footer End-->
+  </body>
+  <!--Body end-->
+</html>
+<!--HTML end-->

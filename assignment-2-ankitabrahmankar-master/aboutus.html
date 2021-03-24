@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- This file contains all the information about Adventures company-->
+<!--HTML start-->
+<html>
+  <head>
+    <!--Head section of HTML-->
+          <!--This meta tag controls page's dimensions and scaling-->
+          <!--width=device-width part sets the width of the page to follow the screen-width of the device-->
+          <!--initial-scale=1.0 part sets initial zoom level when the page is first loaded by the browser-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--This meta tag displays author of the page-->
+          <meta name="author" content="Ankita Brahmankar">
+          <!--This meta tag is used to display an HTML page correctly, by letting browser know the character set used in the page-->
+          <meta charset="UTF-8">
+          <!--Title displayed on the tab-->
+          <title>About us page</title>
+  </head>
+<!--Head tag end-->
+  
+<!--Body start-->
+  <body>
+    <div class="about-section">
+    <!--h1 and h2 tag to style headings-->
+    <h1 style="text-align: center;">About Us Page</h1>
+    <h2>Adventures - Gateway from your mundane routine!<h2>
+    <!--figure tag for specify self contained content-->
+      <figure>
+          <img src="./images/star1.jpg" width="100%">
+          <figcaption style="text-align: center;">Adventures</figcaption>
+           <!--hr tag for horizontal lines-->
+          <hr>
+      </figure>
+      <!--tag figure end-->
+    </div>
+
+    <!--Used div tag defined class team to contain all the tags inside one block-->
+    <div class="team">
+      <h2 style="text-align:center">Our Agenda</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis quaerat totam sint dolorem neque non vitae modi reprehenderit suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aliquid.</p>
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="./images/avatar_female.png" alt="Janifer" style="width:50%">
+            <div class="container">
+              <h2>Janifer David</h2>
+              <p class="title"><b>CEO & Founder</b></p>
+              <p>Most efficient trekker and organizer lorem ipsum ipsum lorem.</p>
+              <p>janifer@example.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./images/avat_m.jpg" alt="Mike" style="width:50%">
+            <div class="container">
+              <h2>Mike Butler</h2>
+              <p class="title"><b>Art Director</b></p>
+              <p>Most efficient camping planer lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column">
+          <div class="card">
+            <img src="./images/avtar_f.png" alt="Jenny" style="width:50%">
+            <div class="container">
+              <h2>Jenny Phalangi</h2>
+              <p class="title"><b>Planner and organizer</b></p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>Jenny@example.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--div team end-->
+
+      <!--Button tag used with attribute onclick to redirect on another html page and some styling with style attribute-->
+      <button onclick="window.location.href='contactus.html';" style=" color: black; padding: 14px 0; margin: 10px 0; width: 48%;">
+        Contact US
+      </button>
+
+
+      <footer>
+        <div>
+            <hr>
+            <h3>Adventure</h3>
+                <p>Gateway for your routine! Lorem ipsum dolor sit amet.</p>
+                <p>Copyright &copy;2020, My Website</p>
+            <a href="Homepage.html">Back</a>
+        </div>
+      </footer>
+      <!--Footer end-->
+    </body>
+     <!--Body end-->
+</html>
+<!--HTML end-->

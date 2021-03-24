@@ -1,0 +1,23 @@
+{
+  "name": "assignment-6-ankitabrahmankar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/main.scss --output dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2020/assignment-6-ankitabrahmankar.git"
+  },
+  "author": "Ankita Brahmankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2020/assignment-6-ankitabrahmankar/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2020/assignment-6-ankitabrahmankar#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
